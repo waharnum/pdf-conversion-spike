@@ -1,0 +1,14 @@
+<html>
+<head>
+
+</head>
+<body>
+<h1>Available Documents</h1>
+<ul>
+{% for file in document_files %}
+    <li><a href="./docs/{{ file }}/pages">{{ file }}</a></li>
+{% endfor %}
+</ul>
+</body>
+
+</html>

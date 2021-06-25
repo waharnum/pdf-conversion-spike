@@ -1,0 +1,23 @@
+<html>
+<head>
+
+</head>
+<body>
+<h1>Details of {{ name }}</h1>    
+<h2>Metadata</h2>
+<ul>
+{% for key in metadata %}
+    <li>{{ key }}: {{ metadata[key] }}</li>
+{% endfor %}
+</ul>
+<h2>{{ page_count }} Pages</h2>
+<ul>
+{% for i in range(page_count) %}
+<li>{{ i+ 1 }} <a href="./pages/{{ i }}?format=html">HTML</a> | <a href="./pages/{{ i }}?format=xhtml">XHTML</a> |  <a href="./pages/{{ i }}?format=text">Text</a> </li>
+{% endfor %}
+
+</ul>
+
+</body>
+
+</html>

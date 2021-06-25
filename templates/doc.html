@@ -13,7 +13,11 @@
 <h2>{{ page_count }} Pages</h2>
 <ul>
 {% for i in range(page_count) %}
-<li>{{ i+ 1 }} <a href="./pages/{{ i }}?format=html">HTML</a> | <a href="./pages/{{ i }}?format=xhtml">XHTML</a> |  <a href="./pages/{{ i }}?format=text">Text</a> </li>
+<li>{{ i+ 1 }} 
+<a href="./pages/{{ i }}?format=html">HTML</a> | 
+<a href="./pages/{{ i }}?format=xhtml">XHTML</a> |  
+<a href="./pages/{{ i }}?format=text">Text</a>
+</li>
 {% endfor %}
 
 </ul>
